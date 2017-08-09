@@ -1,0 +1,107 @@
+<html><head><title>...</title></head><body>
+<ul>
+<li>
+--
+title: OBS直播软件使用指南
+date: 2017-01-22 16:08:15
+category: 其他
+tags: [直播服务,此刻直播]
+</li>
+<ul>
+<li>
+--
+OBS是PC端使用<i>最广泛</i>的<em>直播软件</em>，可以进行录屏直播、摄像直播以及播放本地文件直播等多种方式。下面，简单介绍下如何使用OBS软件来进行「此刻直播」。请给我发邮件：<a href="mailto:pkuflint@163.com">pkuflint@163.com</a>
+</li>
+<h1>
+<!--more-->
+</h1>
+<p>
+## 直播条件
+* 软件：安装好OBS软件，可以直接去 <a href="https://obsproject.com/download" title="哈哈">官网下载</a>，也可以从这个<a href="http://pan.baidu.com/s/1crIevW" title="how about this">地址下载</a> ；提取密码：hiw3
+* 电脑：必须安装有摄像头和麦克风，笔记本电脑一般自带有摄像头和麦克风，如果是台式机则需要去额外购买配件。
+* 网络：上传速度至少100KB/S（大约1Mbps上行带宽）
+</p>
+<p>
+## 软件配置
+以下教程基于Windows版64位OBS软件制作，其他<a href="版本"></a>在细节上略有不同，但总体依然可以参考。
+</p>
+<h2>
+### 配置摄像头和麦克风
+</h2>
+<h2>
+1. 打开OBS软件，在底部的`来源`栏目中，右键点击空白处，在弹出的菜单中选择`视频捕捉设备`。
+</h2>
+<p>
+<img src="http://7sbpes.com1.z0.glb.clouddn.com/%E6%B7%BB%E5%8A%A0%E6%9D%A5%E6%BA%90.png" alt="捕捉" title="capture device">
+</p>
+<h2>
+输入任意名称，或不做任意修改，点击确定。
+</h2>
+<p>
+<img src="http://7sbpes.com1.z0.glb.clouddn.com/%E8%BE%93%E5%85%A5%E5%90%8D%E7%A7%B0.png" alt="">
+2. 在`来源`中双击`视频捕捉设备`，进入配置界面。在下图的中选择`视频设备`，即摄像头；音频设备，即麦克风。
+</p>
+<p>
+<img src="http://7sbpes.com1.z0.glb.clouddn.com/%E8%A7%86%E9%A2%91%E8%AE%BE%E7%BD%AE.png" alt="">
+</p>
+<h2>
+3. 如果网络上传速度较低（低于200KB/S），那么建议开启`自定义分辨率`，并选择分辨率为`480*320`以获得较好的直播体验。
+</h2>
+<h2>
+### 获取直播地址
+</h2>
+<h2>
+你会从供应商那里获取到你这次直播的活动ID或推流地址（活动ID用于手机端直播，而推流地址用于OBS等软件进行直播）。
+</h2>
+<h2>
+直播地址一般分两段：
+</h2>
+<p>
+* 伺服器：`rtmp://w.gslb.lecloud.com/live`
+* 播放路径/串码流：`201701193000000bm99` （举例）
+</p>
+<h2>
+一般来说，直播地址的`伺服器`部分是固定的，而`播放路径/串码流`部分则是由供应商随机分配的。
+</h2>
+<h2>
+> 所以，请务必不要泄露自己的直播地址。
+</h2>
+<h2>
+### 配置直播地址
+</h2>
+<h2>
+1. 在OBS软件底部，点击`设定`按钮；然后在弹出的界面左侧的列表中，选择`广播设定`。
+</h2>
+<p>
+<img src="http://7sbpes.com1.z0.glb.clouddn.com/%E4%B8%BB%E7%95%8C%E9%9D%A2.png" alt="">
+</p>
+<h2>
+2. 在`广播设定`界面，将上面获取的直播地址的两段，分别填写在`伺服器`和`播放路径/串码流`输入框里，然后确定保存即可。
+</h2>
+<p>
+<img src="http://7sbpes.com1.z0.glb.clouddn.com/%E5%B9%BF%E6%92%AD%E8%AE%BE%E5%AE%9A.png" alt="">
+</p>
+<h2>
+### 码率设置
+</h2>
+<h2>
+1. 在`设定`界面左侧的列表中中选择`编码`。
+</h2>
+<p>
+<img src="http://7sbpes.com1.z0.glb.clouddn.com/%E7%BC%96%E7%A0%81%E8%AE%BE%E5%AE%9A.png" alt="">
+2. 根据实际网速，来设置编码，建议的网速和码率数值如下：
+</p>
+<p>
+* 1Mbps上行带宽，上行速度100KB/S左右，建议选择：350
+	* 2Mbps上行带宽，上行速度200KB/S左右，建议选择：800
+</p>
+<h2>
+### 其他设定
+</h2>
+<h2>
+1. 在`设定`界面左侧的列表中选择`高级`。并参考下图，将红框里的各项设置为与截图中相同、
+</h2>
+<p>
+<img src="http://7sbpes.com1.z0.glb.clouddn.com/%E9%AB%98%E7%BA%A7%E8%AE%BE%E5%AE%9A.png" alt="">
+</p>
+</body></html>
